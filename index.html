@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>Coal Mines Limited</title>
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Coal Mines Limited
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="nav.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="info.html">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tender
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item" href="about.html">All Tender</a>
+                            <a class="dropdown-item" href="#">Active Tendars</a>
+                                <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Result of Tendars</a>
+                            <a class="dropdown-item" href="#">Services</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-danger" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <!-- <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button> -->
+
+
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button> -->
+
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Login
+                    </button>
+
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#SignUpModal">SignUp</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- adding the modal here -->
+<!--log in here-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">welcome to Coal Mines Website</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Log in to coal mines</h1>
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                       
+                        <button type="submit" class="btn btn-primary">Login</button>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- sign up start here-->
+
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpModal">welcome to Coal Mines Website</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Sign Up to coal mines</h1>
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="cexampleInputPassword1" class="form-label">confirm Password</label>
+                          <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                       
+                        <button type="submit" class="btn btn-primary">create account</button>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end here -->
+    <!-- end here -->
+
+    <!-- added aoursel abhay -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="31.jpg" style="height:500px;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>साउथ ईस्टर्न कोलफील्ड्स लिमिटेड</h2>
+                    <p>साउथ ईस्टर्न कोलफील्ड्स लिमिटेड
+
+                        South Eastern Coalfields Limited
+
+                        (भारत सरकार का उपक्रम)
+
+                        (A Government of India Undertaking)
+
+                        एक मिनीरत्न कंपनी...</p>
+                    <button class="btn btn-danger">Coal India Subsidiaries</button>
+                    <button class="btn btn-primary">Other Important Links</button>
+                    <button class="btn btn-success">Services</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="banner_1.jpg" style="height:500px;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>साउथ ईस्टर्न कोलफील्ड्स लिमिटेड</h2>
+                    <p>साउथ ईस्टर्न कोलफील्ड्स लिमिटेड
+
+                        South Eastern Coalfields Limited
+                        (भारत सरकार का उपक्रम)
+
+                        (A Government of India Undertaking)
+
+                        एक मिनीरत्न कंपनी...</p>
+                    <button class="btn btn-danger">Coal India Subsidiaries</button>
+                    <button class="btn btn-primary">Other Important Links</button>
+                    <button class="btn btn-success">Services</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="download2.jfif" style="height:500px;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>साउथ ईस्टर्न कोलफील्ड्स लिमिटेड</h2>
+                    <p>साउथ ईस्टर्न कोलफील्ड्स लिमिटेड
+
+                        South Eastern Coalfields Limited
+                        (भारत सरकार का उपक्रम)
+
+                        (A Government of India Undertaking)
+
+                        एक मिनीरत्न कंपनी...</p>
+                    <button class="btn btn-danger">Coal India Subsidiaries</button>
+                    <button class="btn btn-primary">Other Important Links</button>
+                    <button class="btn btn-success">Services</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+<!-- end here -->
+
+
+
+
+
+
+    <!-- hii -->
+
+
+
+
+
+
+    <!-- coursel start sumit here -->
+    <!--div id="carouselExampleCaptions" class="border  border-danger carousel slide crousel-fade" style="margin-top: 500px;" data ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+
+                <img src="31.jpg" style="height:500px;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>साउथ ईस्टर्न कोलफील्ड्स लिमिटेड</h2>
+                    <p>साउथ ईस्टर्न कोलफील्ड्स लिमिटेड
+
+                        South Eastern Coalfields Limited
+
+                        (भारत सरकार का उपक्रम)
+
+                        (A Government of India Undertaking)
+
+                        एक मिनीरत्न कंपनी...</p>
+                    <button class="btn btn-danger">Coal India Subsidiaries</button>
+                    <button class="btn btn-primary">Other Important Links</button>
+                    <button class="btn btn-success">Services</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Coal_July-770x433.jpg" style="height:500px;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>साउथ ईस्टर्न कोलफील्ड्स लिमिटेड</h2>
+                    <p>साउथ ईस्टर्न कोलफील्ड्स लिमिटेड
+
+                        South Eastern Coalfields Limited
+                        (भारत सरकार का उपक्रम)
+
+                        (A Government of India Undertaking)
+
+                        एक मिनीरत्न कंपनी...</p>
+                    <button class="btn btn-danger">Coal India Subsidiaries</button>
+                    <button class="btn btn-primary">Other Important Links</button>
+                    <button class="btn btn-success">Services</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="download2.jfif" style="height:500px;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Ministry of Coal</h2>
+                    <p>The Ministry of Coal has the overall responsibility of determining policies and strategies in
+                        respect of exploration and development of coal and lignite reserves, sanctioning of important
+                        projects of high value and for deciding all related issues.</p>
+                    <button class="btn btn-danger">Coal India Subsidiaries</button>
+                    <button class="btn btn-primary">Other Important Links</button>
+                    <button class="btn btn-success">Services</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>-->
+
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Coal Transporting</strong>
+                        <h3 class="mb-0">Coal Transportation Service</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">Coal transport continues to face challenges: MinistryRoad as well
+                        </p>
+                        <a href="#" class="stretched-link">continue reading.</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="500" height="350"
+                            src="2059510089_5fa5247f0d6ff-1.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Coal Yard</strong>
+                        <h3 class="mb-0">Coal Depot</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">a place at which coal may be deposited, stored, etc. Keepier Wharf, built in
+                            1830,.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="600" height="350"
+                            src="c0ea6044-ef57-4e4e-aa9e-d61040f0562a.jpeg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">BCCL</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">भारत कोकिंग कोल लिमिटेड एक सार्वजनिक क्षेत्र का उपक्रम</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="600" height="350" src="download.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">कोयला मंत्रालय</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">Welcome to the website of Ministry of Coal, Government of India.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="600" height="350" src="major-achievements-of-coal.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="text-align: center;margin-left:35%;width:300px;">
+                <img src="STU615d646d19a361633510509.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hello Sir</h5>
+                    <p class="card-text">This page is Created by Sumit kumar agrahari
+                        E-mail-sumitkumaragrahari07@gmail.com
+                    </p>
+                    <a href="#" class="btn btn-primary"> THANK YOU FOR VISITING THE SITE</a>
+                </div>
+            </div>
+            <footer
+                style=" padding:10px;background-color: #01304C;; font-size:11px; border-top:solid thin rgba(194,204,250,.4);">
+                <div class="container-fluid" style="color:white;text-align:center; ">
+
+                    <div class="row">
+                        <div class="col-lg-5 text-left"> Copyright © SECL 2021. All Rights Reserved. Site Designed &amp;
+                            Developed by System Department,SECL.
+                        </div>
+
+                        <div class="col-7 text-center" style="font-size:14px;">
+
+
+
+
+                            <a style="color:white;"
+                                id="ctl00_FooterContentPlaceHolder_FooterLink_FooterLinks_ctl03_subsubmenu1"
+                                title="Terms &amp; Conditions" class="NavLiLable" href="tnc.php">Terms &amp;
+                                Conditions</a>
+
+
+
+                            |
+
+
+
+
+
+
+                            <a style="color:white;" title="Disclaimer" class="NavLiLable"
+                                href="disclaimer.php">Disclaimer</a>
+
+                            <span>|</span>
+
+                            <a style="color:white;" title="Privacy Policy" class="NavLiLable" href="privacy.php">Privacy
+                                Policy</a>
+
+
+
+                            <span>|</span>
+
+
+
+
+
+                            <a style="color:white;" title="Important Links" class="NavLiLable"
+                                href="imp-links.php">Important Links</a>
+
+
+                            <a style="color:yellow;">
+                                Page Last Updated :10 oct 2021 22:31 </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <div class="row copyright">
+
+                <div class="col-md-6">
+                    Sumit kumar Agrahari<i class="fa fa-copyright"></i> 2021 Coal India Ltd. All Rights Reserved.<br>
+                    Page Last Updated at Oct. 7, 2021, 3:58 p.m.
+
+                </div>
+                <div class="col-md-6" style="text-align: right;">
+
+                    <a class="flink" href="/legal-terms"
+                        style="margin-left:30px;padding-right:10px;border-right: 2px solid green;">Legal Terms</a>
+                    <a class="flink" href="/disclaimer"
+                        style="margin-left:10px;padding-right:10px;border-right: 2px solid green;">E-mail:-sumitkumaragrahari07@gmail.com</a>
+                    <a class="flink" href="/sitemap" style="margin-left:10px;padding-right:10px;">Site Map</a>
+                    <br>Page Views:2937793
+
+
+
+                </div>
+
+
+            </div>
+
+           
+
+            <!-- Optional JavaScript; choose one of the two! -->
+
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+                crossorigin="anonymous"></script>
+
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
